@@ -1,7 +1,5 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-
-import 'package:food_app/home/widget/paraText.dart';
 import 'package:food_app/home/widget/smallText.dart';
 import 'package:food_app/pages/feed.dart';
 

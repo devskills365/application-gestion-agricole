@@ -42,7 +42,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                BigText(text: "Ziin", color: Color.fromARGB(132, 3, 173, 43)),
+                BigText(
+                  text: "Devskills365",
+                  color: Color.fromARGB(132, 3, 173, 43),
+                ),
                 Row(
                   children: [
                     SmallText(text: "Abidjan"),

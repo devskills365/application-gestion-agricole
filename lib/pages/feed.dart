@@ -35,29 +35,37 @@ class Feed extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return ListView.builder(
+      scrollDirection: Axis.horizontal, // Défilement horizontal
       itemCount: videoUrls.length,
       itemBuilder: (context, index) {
         final videoUrl = videoUrls[index];
         final thumbnailUrl = videoImages[index];
 
-        return Card(
-          margin: const EdgeInsets.all(10),
-          elevation: 3,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: () => _openVideo(videoUrl), // Ouvre YouTube
-            child: ClipRRect(
+        return Container(
+          width: screenWidth * 0.6, // Largeur fixe pour chaque vignette
+          margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+          child: Card(
+            elevation: 3,
+            shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
-              child: Image.network(
-                thumbnailUrl,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) {
-                  return thumbnailFallback();
-                },
+            ),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => _openVideo(videoUrl), // Ouvre YouTube
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: Image.network(
+                  thumbnailUrl,
+                  fit: BoxFit.cover,
+                  height:
+                      double.infinity, // Utilise toute la hauteur disponible
+                  errorBuilder: (context, error, stackTrace) {
+                    return thumbnailFallback();
+                  },
+                ),
               ),
             ),
           ),
