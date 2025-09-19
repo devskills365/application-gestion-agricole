@@ -1,0 +1,54 @@
+name: food_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dots_indicator: ^4.0.1
+  get:
+  cupertino_icons: ^1.0.8  # Une seule entrée
+  video_player: ^2.9.1
+  sqflite: ^2.3.0
+  http: ^1.1.0
+  uuid: ^4.5.1
+  path_provider: ^2.1.5
+
+  mobile_scanner: ^7.0.1
+  url_launcher: ^6.3.2  # Une seule entrée, avec la version la plus récente
+  youtube_player_flutter: ^9.1.2
+  flutter_inappwebview: ^6.1.5
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - img/food01.jpg
+    - img/food02.jpg
+    - img/food03.jpg
+    - img/food04.jpg
+    #- videos/vid01.mp4, pour l'instant on utilise les videos youtubes
+    #- videos/vid02.mp4
+
+  fonts:
+    - family: MyBatman
+      fonts:
+        - asset: fonts/batmfa__.ttf
+          weight: 700
+        - asset: fonts/batmfo__.ttf
+          weight: 800
+    - family: MyEthnocrate
+      fonts:
+        - asset: fonts/ethno.otf
+          weight: 700
+        - asset: fonts/ethnor.otf
+          weight: 800
