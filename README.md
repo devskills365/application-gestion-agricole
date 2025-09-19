@@ -1,16 +1,13 @@
-# food_app
 
-A new Flutter project.
+# Application de traçabilité des produits agricoles
 
-## Getting Started
+Notre application a été conçue dans le but de **suivre les produits agricoles**, afin d’assurer la **sécurité alimentaire** des consommateurs. Elle permet de garantir la traçabilité complète, de la production à la distribution, renforçant ainsi la confiance dans la qualité des produits.
 
-This project is a starting point for a Flutter application.
+# Qui sommes-nous ?
 
-A few resources to get you started if this is your first Flutter project:
+**DevSkills365** est une initiative dédiée à la **promotion des compétences techniques des étudiants en Afrique**.
+Nous accompagnons les étudiants pour qu’ils puissent **valoriser leurs talents** et développer des projets concrets et innovants.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Depuis 2023, nous avons lancé cette initiative avec une équipe composée d’étudiants de l’**Université Peleforo Gon Coulibaly de Korhogo**, accompagnés d’un professionnel passionné par les technologies.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Auteur et initiateur : TOH BI – Développeur et Statisticien**
